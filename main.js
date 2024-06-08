@@ -1,6 +1,7 @@
 var demo = document.getElementById('demo');
 var writer =document.getElementById('writer')
-var inserInput = document.getElementById('isert')
+var InsertQoute = document.getElementById('isertَQoute')
+var InsertName = document.getElementById('isertَName')
 var quoteList = [];
 var previousIndex ;
 
@@ -26,11 +27,12 @@ var qout4 = {
 quoteList.push(qout,qout2,qout3,qout4)
 function inser(){
     var product = {
-        quote : inserInput.value ,
-        writer : '-Sherine reda'
+        quote : InsertQoute.value ,
+        writer :`-${InsertName.value}`
     }
     quoteList.push(product)
-    inserInput.value = ""
+    InsertQoute.value = ""
+    InsertName.value = ""
 }
 
 // function when you click change the qoute
